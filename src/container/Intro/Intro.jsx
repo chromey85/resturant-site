@@ -1,11 +1,12 @@
 import React, { useState } from 'react';
 import {BsFillPlayFill, BsPauseFill} from 'react-icons/bs'
-import { meal } from '../../constants';
+// import { meal } from '../../constants';
 
 import './Intro.css';
 
 const Intro = () => {
   const [playVideo, setPlayVideo] = useState(false);
+  const meal = 'https://www.gerichtrestaurant.com/static/media/meal.a1b6c6dc67dfa2f99343.mp4'
   const vidRef = React.useRef();
   const handleVideo = () => {
     setPlayVideo((previousPlayVideo) => !previousPlayVideo)
